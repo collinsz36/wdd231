@@ -47,6 +47,7 @@ header {
 }
 
 .menu-button {
+    display: block;
     border: none;
     background: transparent;
     color: white;
@@ -93,10 +94,6 @@ nav a.active {
 #navigation.open {
     display: flex;
     flex-direction: column;
-}
-
-.menu-button {
-    display: block;
 }
 
 main {
