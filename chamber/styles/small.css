@@ -1,0 +1,297 @@
+:root {
+    --primary-color: #14532d;
+    --secondary-color: #d4a017;
+    --accent-color: #8b5e34;
+    --light-color: #f4f1e8;
+    --white: #ffffff;
+    --dark: #222222;
+    --border: #cccccc;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background-color: var(--light-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.header-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+.brand img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+
+.brand h2 {
+    font-size: 1.4rem;
+}
+
+
+.brand p {
+    font-size: 0.9rem;
+}
+
+
+#menu-button {
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+
+    background: transparent;
+    color: var(--white);
+
+    border: none;
+
+    font-size: 2rem;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--dark);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.view-button {
+    border: 1px solid var(--primary-color);
+
+    background-color: var(--white);
+    color: var(--primary-color);
+
+    padding: 0.6rem 1.5rem;
+
+    border-radius: 4px;
+}
+
+
+.view-button:hover,
+.view-button.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.members {
+    display: grid;
+    gap: 1rem;
+}
+
+
+.grid-view {
+    grid-template-columns: 1fr;
+}
+
+
+.member-card {
+    background-color: #ddd;
+
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border);
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.member-card img {
+    width: 120px;
+    height: 100px;
+
+    object-fit: cover;
+
+    margin: 0 auto 1rem;
+}
+
+.member-information {
+    text-align: center;
+}
+
+.member-information h2 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.tagline {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.member-information p {
+    margin-bottom: 0.35rem;
+}
+
+.member-information a {
+    display: inline-block;
+
+    margin-top: 0.75rem;
+
+    color: var(--primary-color);
+
+    font-weight: bold;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+
+.list-view .member-card {
+    display: flex;
+
+    align-items: center;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    border-left: none;
+    border-right: none;
+
+    padding: 0.75rem;
+}
+
+.list-view .member-card img {
+    display: none;
+}
+
+.list-view .member-information {
+    text-align: left;
+    width: 100%;
+}
+
+.list-view .member-information h2 {
+    font-size: 1rem;
+}
+
+.list-view .tagline {
+    display: none;
+}
+
+.list-view .member-information p {
+    display: none;
+}
+
+.list-view .member-information p:nth-of-type(1) {
+    display: block;
+}
+
+.list-view .member-information a {
+    margin-top: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+
+    margin-top: 2rem;
+
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact h3 {
+    margin-bottom: 0.75rem;
+}
+
+.footer-contact p {
+    margin-bottom: 0.25rem;
+}
+
+.footer-social {
+    display: flex;
+
+    gap: 1rem;
+
+    margin: 1.5rem 0;
+}
+
+.footer-social a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: var(--white);
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.footer-development {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+    padding-top: 1rem;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+}

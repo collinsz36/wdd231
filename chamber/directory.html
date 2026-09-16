@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Kadoma Chamber of Commerce business directory connecting businesses, entrepreneurs, farmers, miners, and customers in Kadoma, Zimbabwe.">
+
+    <meta name="author" content="Collins Zivanai">
+
+    <meta property="og:title" content="Kadoma Chamber of Commerce Directory">
+    <meta property="og:description"
+        content="Discover businesses and services in Kadoma, Zimbabwe through the Kadoma Chamber of Commerce directory.">
+    <meta property="og:image" content="https://collinsz36.github.io/wdd231/chamber/images/kadoma-chamber.jpg">
+    <meta property="og:url" content="https://collinsz36.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <title>Kadoma Chamber of Commerce | Business Directory</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="brand">
+                <img src="images/kadoma-logo.jpg" alt="Kadoma Chamber of Commerce logo">
+
+                <div>
+                    <h2>Kadoma</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="directory.html" class="active">
+                    Directory
+                </a>
+
+                <a href="discover.html">Discover</a>
+
+                <a href="join.html">Join</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <h1>Business Directory</h1>
+
+        <section class="directory-controls">
+
+            <button id="grid-button" class="view-button active">
+                Grid
+            </button>
+
+            <button id="list-button" class="view-button">
+                List
+            </button>
+
+        </section>
+
+
+        <section id="members" class="members grid-view">
+
+            <p class="loading">
+                Loading Kadoma businesses...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-contact">
+
+                <h3>Kadoma Chamber of Commerce</h3>
+
+                <p>10 Robert Mugabe Street</p>
+
+                <p>Kadoma, Zimbabwe</p>
+
+                <p>Email: info@kadomachamber.co.zw</p>
+
+                <p>Phone: +263 68 22 25166</p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Kadoma Chamber YouTube">
+                    ▶
+                </a>
+
+                <a href="#" aria-label="Kadoma Chamber Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Kadoma Chamber LinkedIn">
+                    in
+                </a>
+
+            </div>
+
+
+            <div class="footer-development">
+
+                <p>WDD 231 Class Project</p>
+
+                <p>Collins Zivanai</p>
+
+                <p>
+                    © <span id="currentyear"></span>
+                    Kadoma Chamber of Commerce
+                </p>
+
+                <p>
+                    Last Modification:
+                    <span id="lastModified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
