@@ -4,7 +4,7 @@
         "address": "12 Owl Road, Kadoma, Zimbabwe",
         "phone": "+263 68 22 22767",
         "website": "https://blackstone.com",
-        "image": "kadoma-mining.webp",
+        "image": "kadoma-mining.jpg",
         "membership": 3,
         "category": "Mining",
         "description": "Mining services and support for gold-producing businesses in the Kadoma area."
@@ -14,7 +14,7 @@
         "address": "24 Harare Road, Kadoma, Zimbabwe",
         "phone": "+263 68 22 62857",
         "website": "https://farm&city.com",
-        "image": "kadoma-agri.webp",
+        "image": "kadoma-agri.jpg",
         "membership": 3,
         "category": "Agriculture",
         "description": "Agricultural services supporting farmers with crop production and farm development."
@@ -24,7 +24,7 @@
         "address": "45 Main Street, Kadoma, Zimbabwe",
         "phone": "+263 68 22 74368",
         "website": "https://kadomameatsupplies.com",
-        "image": "kadoma-farm-supplies.webp",
+        "image": "kadoma-farm-supplies.jpg",
         "membership": 2,
         "category": "Agriculture",
         "description": "Supplies farming equipment, seed, fertilizer, irrigation products, and agricultural tools."
@@ -34,7 +34,7 @@
         "address": "18 Industrial Road, Kadoma, Zimbabwe",
         "phone": "+263 68 22 29569",
         "website": "https://dynastyconstruction.com",
-        "image": "kadoma-construction.webp",
+        "image": "kadoma-construction.jpg",
         "membership": 2,
         "category": "Construction",
         "description": "Construction and building services for residential and commercial projects."
@@ -44,7 +44,7 @@
         "address": "7 Railway Avenue, Kadoma, Zimbabwe",
         "phone": "+263 68 22 45170",
         "website": "https://nationalrailways.co.zw",
-        "image": "kadoma-transport.webp",
+        "image": "kadoma-transport.jpg",
         "membership": 1,
         "category": "Transport",
         "description": "Local transportation and logistics services for businesses and communities."
@@ -54,7 +54,7 @@
         "address": "31 Main Street, Kadoma, Zimbabwe",
         "phone": "+263 68 22 45671",
         "website": "https://pickandpay.co.zw",
-        "image": "kadoma-retail.webp",
+        "image": "kadoma-retail.jpg",
         "membership": 1,
         "category": "Retail",
         "description": "Retail services providing products and supplies to local businesses and families."
@@ -64,7 +64,7 @@
         "address": "9 Church Street, Kadoma, Zimbabwe",
         "phone": "+263 68 212 84572",
         "website": "https://kadomafinancials.com",
-        "image": "kadoma-finance.webp",
+        "image": "kadoma-finance.jpg",
         "membership": 2,
         "category": "Financial Services",
         "description": "Financial support and business services for entrepreneurs and local companies."
