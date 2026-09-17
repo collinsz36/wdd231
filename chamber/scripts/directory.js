@@ -31,7 +31,7 @@ function displayMembers(members) {
 
     membersContainer.innerHTML = "";
 
-    members.forEach((member) => {
+    members.forEach(function (member) {
 
         const card = document.createElement("article");
 
@@ -84,14 +84,14 @@ function getMembership(level) {
         return "Gold";
     }
 
-    if (level === 2) {
+    else if (level === 2) {
         return "Silver";
-    }
+    } else
 
-    return "Member";
+        return "Member";
 }
 
-gridButton.addEventListener("click", () => {
+gridButton.addEventListener("click", function () {
 
     membersContainer.classList.add("grid-view");
     membersContainer.classList.remove("list-view");
@@ -100,7 +100,7 @@ gridButton.addEventListener("click", () => {
     listButton.classList.remove("active");
 });
 
-listButton.addEventListener("click", () => {
+listButton.addEventListener("click", function () {
 
     membersContainer.classList.add("list-view");
     membersContainer.classList.remove("grid-view");
@@ -109,7 +109,7 @@ listButton.addEventListener("click", () => {
     gridButton.classList.remove("active");
 });
 
-menuButton.addEventListener("click", () => {
+menuButton.addEventListener("click", function () {
 
     navigation.classList.toggle("open");
 
