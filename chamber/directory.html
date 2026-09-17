@@ -10,11 +10,15 @@
         content="Kadoma Chamber of Commerce business directory connecting businesses, entrepreneurs, farmers, miners, and customers in Kadoma, Zimbabwe.">
 
     <meta name="author" content="Collins Zivanai">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <meta property="og:title" content="Kadoma Chamber of Commerce Directory">
     <meta property="og:description"
         content="Discover businesses and services in Kadoma, Zimbabwe through the Kadoma Chamber of Commerce directory.">
-    <meta property="og:image" content="https://collinsz36.github.io/wdd231/chamber/images/kadoma-chamber.jpg">
+    <meta property="og:image" content="https://collinsz36.github.io/wdd231/chamber/images/kadoma-logo.jpg">
     <meta property="og:url" content="https://collinsz36.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
@@ -39,7 +43,7 @@
                 <img src="images/kadoma-logo.jpg" alt="Kadoma Chamber of Commerce logo">
 
                 <div>
-                    <h2>Kadoma</h2>
+                    <h1>Kadoma</h1>
                     <p>Chamber of Commerce</p>
                 </div>
             </div>
@@ -69,7 +73,7 @@
 
     <main>
 
-        <h1>Kadoma Chamber of Commerce Business Directory</h1>
+        <h2>Kadoma Chamber of Commerce Business Directory</h2>
 
         <p>
             Find businesses, entrepreneurs, farmers, miners, retailers,
@@ -77,7 +81,7 @@
             directory to discover local products and services.
         </p>
 
-        <section class="directory-controls">
+        <div class="directory-controls">
 
             <button id="grid-button" class="view-button active">
                 Grid
@@ -87,16 +91,16 @@
                 List
             </button>
 
-        </section>
+        </div>
 
 
-        <section id="members" class="members grid-view">
+        <div id="members" class="members grid-view">
 
             <p class="loading">
                 Loading Kadoma businesses...
             </p>
 
-        </section>
+        </div>
 
     </main>
 
