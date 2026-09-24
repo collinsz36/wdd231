@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kadoma Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="Kadoma Chamber of Commerce connects businesses, entrepreneurs, farmers, miners, and customers in Kadoma, Zimbabwe.">
+
+    <meta name="author" content="Collins Zivanai">
+
+    <meta property="og:title" content="Kadoma Chamber of Commerce">
+    <meta property="og:description"
+        content="Connecting businesses, entrepreneurs, farmers, miners, and customers in Kadoma, Zimbabwe.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://collinsz36.github.io/wdd231/chamber/">
+    <meta property="og:image" content="https://collinsz36.github.io/wdd231/chamber/images/kadoma-hero.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+
+            <div class="brand">
+                <img src="images/kadoma-logo.jpg" alt="Kadoma Chamber of Commerce logo">
+
+                <div>
+                    <h2>Kadoma Chamber of Commerce</h2>
+                </div>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <img src="images/kadoma-hero.jpg" alt="Kadoma city and surrounding business community">
+
+            <div class="hero-content">
+                <h1>Growing Business in Kadoma</h1>
+
+                <p>
+                    Connecting businesses, entrepreneurs, farmers,
+                    miners, and customers throughout Kadoma.
+                </p>
+
+                <a href="join.html" class="join-button">
+                    Join the Chamber
+                </a>
+            </div>
+
+        </section>
+
+        <section class="events-section">
+
+            <h2>Current Events</h2>
+
+            <div class="events-container">
+
+                <article class="event-card">
+                    <h3>Business Networking Meeting</h3>
+
+                    <p>
+                        Meet local business owners and entrepreneurs,
+                        share ideas and discover new opportunities.
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 25 September 2026
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong> Kadoma Civic Centre
+                    </p>
+                </article>
+
+                <article class="event-card">
+
+                    <h3>Kadoma Business Expo</h3>
+
+                    <p>
+                        Local businesses are invited to showcase their
+                        products and services to the community.
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong> 10 October 2026
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong> Kadoma Town Centre
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="weather-section">
+
+            <h2>Weather in Kadoma</h2>
+
+            <div class="weather-current">
+
+                <div class="weather-icon">
+                    <span id="weather-icon">☀️</span>
+                </div>
+
+                <div>
+                    <p>
+                        Temperature:
+                        <span id="current-temperature">Loading...</span>
+                    </p>
+
+                    <p>
+                        Conditions:
+                        <span id="weather-description">Loading...</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <h3>Three Day Forecast</h3>
+
+            <div id="forecast" class="forecast-container">
+                <p>Loading forecast...</p>
+            </div>
+
+        </section>
+
+        <section class="spotlights-section">
+
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlights" class="spotlights-container">
+
+                <p>Loading business spotlights...</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+                <h3>Kadoma Chamber of Commerce</h3>
+
+                <p>
+                    Connecting and supporting businesses
+                    in Kadoma, Zimbabwe.
+                </p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Kadoma, Zimbabwe</p>
+                <p>Phone: 0772 355 363</p>
+                <p>Email: info@kadomachamber.co.zw</p>
+            </div>
+
+            <div>
+                <p>
+                    &copy;
+                    <span id="currentyear"></span>
+                    Collins Zivanai
+                </p>
+
+                <p>
+                    WDD231 Chamber Project
+                </p>
+
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

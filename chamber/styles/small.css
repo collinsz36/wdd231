@@ -53,10 +53,10 @@ header {
     position: absolute;
     right: 1rem;
     top: 1.2rem;
-
+    display: block;
     background: transparent;
     color: var(--white);
-
+    cursor: pointer;
     border: none;
 
     font-size: 2rem;
@@ -73,6 +73,7 @@ nav.open {
 }
 
 nav a {
+    color: var(--white);
     text-decoration: none;
     padding: 0.75rem;
     border-top: 1px solid #ffffff33;
@@ -80,8 +81,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: var(--secondary-color);
-    color: var(--dark);
+    background-color: var(--accent-color);
+    color: var(--light-color);
 }
 
 main {
@@ -294,4 +295,126 @@ footer {
 .loading {
     text-align: center;
     padding: 2rem;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    padding: 1.5rem;
+    background-color: #000000bf;
+    color: white;
+}
+
+.hero-content h1 {
+    margin-top: 0;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--white);
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.join-button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+.events-section,
+.weather-section,
+.spotlights-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.events-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.event-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--light-color);
+}
+
+.weather-section {
+    background-color: var(--light-color);
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-icon {
+    font-size: 3rem;
+}
+
+.forecast-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.forecast-card {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlights-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+    text-align: center;
+}
+
+.spotlight-card a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#navigation {
+    display: none;
+    flex-direction: column;
+}
+
+#navigation.show {
+    display: flex;
 }

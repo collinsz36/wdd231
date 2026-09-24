@@ -32,7 +32,7 @@
 
     nav a {
         border: none;
-
+        color: var(--white);
         padding: 0.75rem 1rem;
     }
 
@@ -62,7 +62,6 @@
 
     .member-card img {
         margin: 0;
-
         width: 240px;
         height: 200px;
     }
@@ -130,6 +129,44 @@
 
     .footer-social {
         justify-content: center;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 5%;
+        bottom: 10%;
+        max-width: 500px;
+        border-radius: 8px;
+    }
+
+    .events-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .weather-current {
+        max-width: 400px;
+    }
+
+    .forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlight-card {
+        min-height: 300px;
     }
 
 }

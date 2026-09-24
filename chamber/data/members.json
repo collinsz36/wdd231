@@ -5,7 +5,7 @@
         "phone": "+263 68 22 22767",
         "website": "https://blackstone.com",
         "image": "kadoma-mining.jpg",
-        "membership": 3,
+        "membership": "Gold",
         "category": "Mining",
         "description": "Mining services and support for gold-producing businesses in the Kadoma area."
     },
@@ -15,7 +15,7 @@
         "phone": "+263 68 22 62857",
         "website": "https://farm&city.com",
         "image": "kadoma-agri.jpg",
-        "membership": 3,
+        "membership": "Gold",
         "category": "Agriculture",
         "description": "Agricultural services supporting farmers with crop production and farm development."
     },
@@ -25,7 +25,7 @@
         "phone": "+263 68 22 74368",
         "website": "https://kadomameatsupplies.com",
         "image": "kadoma-farm-supplies.jpg",
-        "membership": 2,
+        "membership": "Silver",
         "category": "Agriculture",
         "description": "Supplies farming equipment, seed, fertilizer, irrigation products, and agricultural tools."
     },
@@ -35,7 +35,7 @@
         "phone": "+263 68 22 29569",
         "website": "https://dynastyconstruction.com",
         "image": "kadoma-construction.jpg",
-        "membership": 2,
+        "membership": "Silver",
         "category": "Construction",
         "description": "Construction and building services for residential and commercial projects."
     },
@@ -65,7 +65,7 @@
         "phone": "+263 68 212 84572",
         "website": "https://kadomafinancials.com",
         "image": "kadoma-finance.jpg",
-        "membership": 2,
+        "membership": "Silver",
         "category": "Financial Services",
         "description": "Financial support and business services for entrepreneurs and local companies."
     }
