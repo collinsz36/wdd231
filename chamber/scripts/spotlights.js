@@ -32,7 +32,8 @@ async function loadSpotlights() {
             card.classList.add("spotlight-card");
 
             card.innerHTML = `
-    <img src = "images/${member.image}" alt = "${member.name} logo">
+    <img src = "images/${member.image}" alt = "${member.name} logo" 
+    loading = "Lazy" width = "300" height = "200">
 
                 <h3>${member.name}</h3>
 
