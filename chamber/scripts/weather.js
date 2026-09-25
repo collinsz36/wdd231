@@ -16,31 +16,27 @@ async function getWeather() {
         const response = await fetch(currentWeatherURL);
 
         if (!response.ok) {
-            throw new Error("Current weather could not be loaded.");
+            throw new Error("Weather could not be loaded.");
         }
 
         const data = await response.json();
 
-        document.querySelector("#current-temperature").textContent =
-            `${Math.round(data.main.temp)}°C`;
+        document.querySelector("#current-temperature").textContent = Math.round(data.main.temp) + "°C";
 
-        document.querySelector("#weather-description").textContent =
-            data.weather[0].description;
+        document.querySelector("#weather-description").textContent = data.weather[0].description;
 
-        document.querySelector("#weather-icon").textContent =
-            getWeatherIcon(data.weather[0].main);
+        document.querySelector("#weather-icon").textContent = getWeatherIcon(data.weather[0].main);
 
     } catch (error) {
 
-        console.log(error);
+        console.log("Weather error:", error);
 
-        document.querySelector("#current-temperature").textContent =
-            "Unavailable";
+        document.querySelector("#current-temperature").textContent = "Unavailable";
 
-        document.querySelector("#weather-description").textContent =
-            "Weather unavailable";
+        document.querySelector("#weather-description").textContent = "Weather unavailable";
     }
 }
+
 
 async function getForecast() {
 
@@ -54,25 +50,30 @@ async function getForecast() {
 
         const data = await response.json();
 
-        const forecastContainer =
-            document.querySelector("#forecast");
+        const forecastContainer = document.querySelector("#forecast");
 
         forecastContainer.innerHTML = "";
 
-        const dailyForecasts = [];
+        let dailyForecasts = [];
 
-        data.list.forEach(item => {
+        for (let i = 0; i < data.list.length; i++) {
+
+            const item = data.list[i];
 
             const date = new Date(item.dt * 1000);
 
-            const dateString =
-                date.toLocaleDateString("en-US");
+            const dateString = date.toLocaleDateString("en-US");
 
-            const alreadyAdded = dailyForecasts.some(
-                forecast => forecast.date === dateString
-            );
+            let alreadyAdded = false;
 
-            if (!alreadyAdded && dailyForecasts.length < 3) {
+            for (let j = 0; j < dailyForecasts.length; j++) {
+
+                if (dailyForecasts[j].date === dateString) {
+                    alreadyAdded = true;
+                }
+            }
+
+            if (alreadyAdded === false && dailyForecasts.length < 3) {
 
                 dailyForecasts.push({
                     date: dateString,
@@ -82,15 +83,14 @@ async function getForecast() {
                     temperature: Math.round(item.main.temp),
                     description: item.weather[0].description
                 });
-
             }
+        }
 
-        });
+        for (let i = 0; i < dailyForecasts.length; i++) {
 
-        dailyForecasts.forEach(forecast => {
+            const forecast = dailyForecasts[i];
 
-            const card =
-                document.createElement("article");
+            const card = document.createElement("article");
 
             card.classList.add("forecast-card");
 
@@ -101,18 +101,16 @@ async function getForecast() {
             `;
 
             forecastContainer.appendChild(card);
-
-        });
-
+        }
 
     } catch (error) {
 
-        console.log(error);
+        console.log("Forecast error:", error);
 
-        document.querySelector("#forecast").innerHTML =
-            "<p>Forecast unavailable.</p>";
+        document.querySelector("#forecast").innerHTML = "<p>Forecast unavailable.</p>";
     }
 }
+
 
 function getWeatherIcon(weather) {
 
@@ -134,6 +132,7 @@ function getWeatherIcon(weather) {
 
     return "🌤️";
 }
+
 
 getWeather();
 getForecast();

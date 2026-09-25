@@ -11,12 +11,15 @@ async function loadSpotlights() {
 
         const members = await response.json();
 
-        const qualifiedMembers = members.filter(member =>
-            member.membership === "Gold" ||
-            member.membership === "Silver"
-        );
+        const qualifiedMembers = []
+        members.forEach(function (member) {
+            if (member.membership === "Gold" ||
+                member.membership === "Silver") {
+                qualifiedMembers.push(member);
+            }
+        });
 
-        qualifiedMembers.sort(() => Math.random() - 0.5);
+        qualifiedMembers.sort(function () { return Math.random() - 0.5 });
 
         const selectedMembers = qualifiedMembers.slice(0, 3);
 
@@ -24,10 +27,9 @@ async function loadSpotlights() {
 
         spotlights.innerHTML = "";
 
-        selectedMembers.forEach(member => {
+        selectedMembers.forEach(function (member) {
 
-            const card =
-                document.createElement("article");
+            const card = document.createElement("article");
 
             card.classList.add("spotlight-card");
 
