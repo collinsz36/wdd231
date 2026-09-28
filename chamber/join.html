@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Join the Kadoma Chamber of Commerce and connect your business with businesses, entrepreneurs, farmers, miners, and customers in Kadoma, Zimbabwe.">
+
+    <meta name="author" content="Collins Zivanai">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Kadoma Chamber of Commerce | Join">
+    <meta property="og:description" content="Apply for membership with the Kadoma Chamber of Commerce.">
+    <meta property="og:image" content="https://collinsz36.github.io/wdd231/chamber/images/kadoma-logo.jpg">
+    <meta property="og:url" content="https://collinsz36.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Kadoma Chamber of Commerce | Join</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="brand">
+
+                <img src="images/kadoma-logo.jpg" alt="Kadoma Chamber of Commerce logo">
+
+                <div>
+                    <h2>Kadoma</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="directory.html">Directory</a>
+
+                <a href="discover.html">Discover</a>
+
+                <a href="join.html" class="active">Join</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <h1>Join the Kadoma Chamber of Commerce</h1>
+
+        <p class="join-introduction">
+            Become a member of the Kadoma Chamber of Commerce and
+            connect with businesses, entrepreneurs, farmers, miners,
+            retailers and service providers in Kadoma.
+        </p>
+
+
+        <div class="join-layout">
+
+            <section class="application-section">
+
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html">
+
+                    <label for="firstName">
+                        First Name
+                        <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+
+                    <label for="lastName">
+                        Last Name
+                        <input type="text" id="lastName" name="lastName" title="Enter your last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+
+                    <label for="organizationTitle">
+                        Organizational Title
+                        <input type="text" id="organizationTitle" name="organizationTitle"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+
+                    <label for="email">
+                        Email Address
+                        <input type="email" id="email" name="email" title="Enter your email address"
+                            autocomplete="email" placeholder="example@email.com" required>
+                    </label>
+
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+
+                    <label for="organization">
+                        Business / Organization Name
+                        <input type="text" id="organization" name="organization"
+                            title="Enter your business or organization name" autocomplete="organization" required>
+                    </label>
+
+
+                    <label for="membership">
+                        Membership Level
+
+                        <select id="membership" name="membership" title="Select a membership level" required>
+
+                            <option value="">
+                                Select a membership level
+                            </option>
+
+                            <option value="np">
+                                NP Membership
+                            </option>
+
+                            <option value="bronze">
+                                Bronze Membership
+                            </option>
+
+                            <option value="silver">
+                                Silver Membership
+                            </option>
+
+                            <option value="gold">
+                                Gold Membership
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+                    <label for="description">
+                        Business / Organization Description
+
+                        <textarea id="description" name="description" title="Describe your business or organization"
+                            rows="5"></textarea>
+
+                    </label>
+
+
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+
+                    <input type="submit" value="Submit Membership Application">
+
+                </form>
+
+            </section>
+
+
+            <section class="membership-section">
+
+                <h2>Membership Levels</h2>
+
+
+                <div class="membership-card">
+
+                    <h3>NP Membership</h3>
+
+                    <p>
+                        For non-profit organizations.
+                    </p>
+
+                    <button type="button" class="modal-link" data-modal="npModal">
+                        More Information
+                    </button>
+
+                </div>
+
+
+                <div class="membership-card">
+
+                    <h3>Bronze Membership</h3>
+
+                    <p>
+                        For growing businesses.
+                    </p>
+
+                    <button type="button" class="modal-link" data-modal="bronzeModal">
+                        More Information
+                    </button>
+
+                </div>
+
+
+                <div class="membership-card">
+
+                    <h3>Silver Membership</h3>
+
+                    <p>
+                        Additional promotional opportunities.
+                    </p>
+
+                    <button type="button" class="modal-link" data-modal="silverModal">
+                        More Information
+                    </button>
+
+                </div>
+
+
+                <div class="membership-card">
+
+                    <h3>Gold Membership</h3>
+
+                    <p>
+                        Premium business exposure and benefits.
+                    </p>
+
+                    <button type="button" class="modal-link" data-modal="goldModal">
+                        More Information
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <dialog id="npModal">
+
+            <h2>NP Membership</h2>
+
+            <p>
+                This membership is designed for non-profit
+                organizations and has no membership fee.
+            </p>
+
+            <ul>
+                <li>Free membership</li>
+                <li>Business directory listing</li>
+                <li>Networking opportunities</li>
+                <li>Access to selected chamber events</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+
+        <dialog id="bronzeModal">
+
+            <h2>Bronze Membership</h2>
+
+            <p>
+                Bronze membership provides affordable benefits
+                for growing businesses.
+            </p>
+
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking opportunities</li>
+                <li>Access to chamber events</li>
+                <li>Selected event discounts</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+
+        <dialog id="silverModal">
+
+            <h2>Silver Membership</h2>
+
+            <p>
+                Silver membership provides additional promotional
+                and training opportunities.
+            </p>
+
+            <ul>
+                <li>All Bronze membership benefits</li>
+                <li>Business training opportunities</li>
+                <li>Advertising opportunities</li>
+                <li>Event discounts</li>
+                <li>Special member events</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+
+        <dialog id="goldModal">
+
+            <h2>Gold Membership</h2>
+
+            <p>
+                Gold membership provides premium promotional
+                opportunities for businesses.
+            </p>
+
+            <ul>
+                <li>All Silver membership benefits</li>
+                <li>Home page spotlight opportunities</li>
+                <li>Premium business promotion</li>
+                <li>Special networking events</li>
+                <li>Premium training opportunities</li>
+            </ul>
+
+            <button class="close-modal">
+                Close
+            </button>
+
+        </dialog>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-contact">
+
+                <h2>Kadoma Chamber of Commerce</h2>
+
+                <p>10 Robert Mugabe Street</p>
+
+                <p>Kadoma, Zimbabwe</p>
+
+                <p>
+                    Email: info@kadomachamber.co.zw
+                </p>
+
+                <p>
+                    Phone: +263 68 22 25166
+                </p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Kadoma Chamber YouTube">
+                    ▶
+                </a>
+
+                <a href="#" aria-label="Kadoma Chamber Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Kadoma Chamber LinkedIn">
+                    in
+                </a>
+
+            </div>
+
+
+            <div class="footer-development">
+
+                <p>WDD 231 Class Project</p>
+
+                <p>Collins Zivanai</p>
+
+                <p>
+                    © <span id="currentyear"></span>
+                    Kadoma Chamber of Commerce
+                </p>
+
+                <p>
+                    <span id="lastModified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
