@@ -90,7 +90,7 @@
     border-radius: 10px;
     padding: 1.5rem;
     text-align: center;
-    animation: membershipCard 5s ease;
+    animation: membershipCard 0.8s ease;
 }
 
 @keyframes membershipCard {
