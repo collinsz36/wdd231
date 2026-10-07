@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover Kadoma, Zimbabwe. Explore local business, mining, agriculture, markets and regional features with the Kadoma Chamber of Commerce.">
+
+    <meta name="author" content="Collins Zivanai">
+
+    <title>Discover Kadoma | Kadoma Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="site-brand">
+                <img src="images/favicon.ico" alt="Kadoma Chamber of Commerce logo" width="50" height="50">
+                <span>Kadoma Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="main-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html" aria-current="page">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="discover-intro">
+            <h1>Discover Kadoma</h1>
+            <p>
+                Explore the places, industries and community features
+                that contribute to life and business in Kadoma, Zimbabwe.
+            </p>
+        </section>
+
+        <section class="visitor-message" aria-live="polite" aria-atomic="true">
+            <p id="visit-message">
+                Welcome! Let us know if you have any questions.
+            </p>
+        </section>
+
+        <section class="discover-section">
+            <h2>Places and Features of Interest</h2>
+            <p class="section-description">
+                Learn about the local economy, surrounding landscape,
+                community and transport links.
+            </p>
+
+            <div id="discover-grid" class="discover-grid">
+                <p>Loading places of interest...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Kadoma Chamber of Commerce</strong></p>
+            <p>Kadoma, Mashonaland West, Zimbabwe</p>
+            <p>Email: info@kadomachamber.example</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span>
+                Kadoma Chamber of Commerce
+            </p>
+            <p>WDD231 | Collins Zivanai</p>
+            <p>Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

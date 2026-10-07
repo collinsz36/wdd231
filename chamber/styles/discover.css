@@ -1,0 +1,209 @@
+.discover-intro {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #edf3f7;
+}
+
+.discover-intro h1 {
+    margin-bottom: 0.75rem;
+    color: #0000ff;
+}
+
+.discover-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.visitor-message {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: #fff3cd;
+    border-left: 5px solid #c18b18;
+    border-radius: 5px;
+}
+
+.visitor-message p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.discover-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.discover-section>h2,
+.section-description {
+    text-align: center;
+}
+
+.section-description {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
+    grid-template-areas:
+        "mining"
+        "dam"
+        "town"
+        "agriculture"
+        "dyke"
+        "recreation"
+        "market"
+        "transport";
+    gap: 1.5rem;
+}
+
+.discover-card {
+    min-width: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+}
+
+.discover-card h2 {
+    margin: 0;
+    padding: 1rem;
+    color: #173b57;
+    font-size: 1.25rem;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.discover-card address {
+    padding: 1rem 1rem 0;
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.discover-card>p {
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+.discover-card .learn-more {
+    margin: 0 1rem 1rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #173b57;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.discover-card .learn-more:hover,
+.discover-card .learn-more:focus-visible {
+    background-color: #285f83;
+}
+
+.discover-card .more-details {
+    margin: 0 1rem 1rem;
+    padding: 0.75rem;
+    background-color: #edf3f7;
+    line-height: 1.6;
+}
+
+.discover-card .more-details[hidden] {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mining"
+            "dam"
+            "town"
+            "agriculture"
+            "dyke"
+            "recreation"
+            "market"
+            "transport";
+    }
+
+    .discover-card img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "mining mining"
+            "mining mining"
+            "dam town"
+            "agriculture town"
+            "dyke recreation"
+            "dyke market"
+            "transport transport";
+        gap: 1.25rem;
+    }
+
+    .discover-card img {
+        height: 200px;
+    }
+
+    .discover-card h2 {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas:
+            "mining mining dam town"
+            "mining mining agriculture town"
+            "dyke recreation agriculture market"
+            "dyke transport transport market";
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+
+    .discover-card img {
+        height: 200px;
+    }
+
+    .discover-card {
+        transition: box-shadow 0.3s ease;
+    }
+
+    .discover-card figure img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card figure:hover img {
+        transform: scale(1.06);
+        filter: brightness(1.08);
+    }
+
+    .discover-card:hover {
+        box-shadow: 0 6px 16px rgb(0 0 0 / 18%);
+    }
+}
