@@ -24,6 +24,11 @@
     border-radius: 5px;
 }
 
+span {
+    color: white;
+    font-weight: bold;
+}
+
 .visitor-message p {
     margin: 0;
     line-height: 1.5;
