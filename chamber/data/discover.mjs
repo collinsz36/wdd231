@@ -3,7 +3,7 @@ export const discoverItems = [
     {
         id: "mining",
         name: "Kadoma Gold Mining",
-        address: "Kadoma and surrounding mining areas, Mashonaland West, Zimbabwe",
+        address: "Golden Valley mine,Kadoma, Mashonaland West, Zimbabwe",
         image: "kadoma-mining.webp",
         alt: "Gold mining activity in the Kadoma region",
         description: "Kadoma and its surrounding areas are associated with gold mining. Mining supports employment, transport, equipment supply and other local businesses.",
@@ -12,7 +12,7 @@ export const discoverItems = [
     {
         id: "dam",
         name: "Local Dams and Water Resources",
-        address: "Kadoma district and surrounding rural areas, Zimbabwe",
+        address: "Claw Dam, Kadoma, Zimbabwe",
         image: "kadoma-dam.webp",
         alt: "Reservoir surrounded by natural vegetation",
         description: "Water resources in and around the district support domestic needs, agriculture and other community activities.",
@@ -30,7 +30,7 @@ export const discoverItems = [
     {
         id: "agriculture",
         name: "Agriculture Around Kadoma",
-        address: "Kadoma district, Mashonaland West, Zimbabwe",
+        address: "Green Hectares farm, Kadoma, Mashonaland West, Zimbabwe",
         image: "kadoma-agriculture.webp",
         alt: "Agricultural fields in rural Zimbabwe",
         description: "Agriculture contributes to livelihoods in the wider Kadoma district. Farming creates opportunities for suppliers, traders, transporters and food businesses.",
@@ -57,7 +57,7 @@ export const discoverItems = [
     {
         id: "market",
         name: "Local Markets and Retail",
-        address: "Kadoma town, Zimbabwe",
+        address: "Kadoma Town Agricultural Market, Zimbabwe",
         image: "kadoma-market.webp",
         alt: "Fresh produce and goods at a local market",
         description: "Local markets and retail businesses connect producers, traders and customers, helping circulate goods and services within the community.",
