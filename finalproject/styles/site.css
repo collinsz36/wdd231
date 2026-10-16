@@ -188,7 +188,7 @@ textarea:focus-visible {
 }
 
 .eyebrow {
-    color: #99640A;
+    color: var(--blue);
     font-size: .78rem;
     font-weight: 700;
     letter-spacing: .15em;
@@ -736,103 +736,4 @@ textarea {
     grid-column: 1 / -1;
     border-top: 1px solid rgba(255, 255, 255, .2);
     padding-top: 1rem;
-}
-
-@media (max-width: 760px) {
-    .site-header {
-        flex-wrap: wrap;
-    }
-
-    .menu-button {
-        display: block;
-    }
-
-    .site-nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-        padding-top: .5rem;
-    }
-
-    .site-nav.open {
-        display: flex;
-    }
-
-    .site-nav a {
-        padding: .8rem;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        padding-top: 3.2rem;
-    }
-
-    .hero-art {
-        min-height: 280px;
-        max-width: 470px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .feature-grid,
-    .card-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .split-layout {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .toolbar {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .toolbar label {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .brand {
-        font-size: .9rem;
-    }
-
-    .hero-art {
-        min-height: 240px;
-        transform: scale(.94);
-    }
-
-    .feature-grid,
-    .card-grid,
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .site-footer {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-links {
-        justify-content: start;
-    }
-
-    .copyright {
-        grid-column: auto;
-    }
-
-    .saved-bar {
-        align-items: start;
-    }
-
-    .saved-bar span {
-        width: 100%;
-    }
 }
