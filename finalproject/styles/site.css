@@ -184,7 +184,7 @@ textarea:focus-visible {
 .hero-content>p:not(.eyebrow) {
     max-width: 590px;
     font-size: 1.1rem;
-    color: var(--muted);
+    color: var(--blue-dark);
 }
 
 .eyebrow {
@@ -358,7 +358,7 @@ textarea:focus-visible {
 }
 
 .section-heading>p:last-child {
-    color: var(--muted);
+    color: var(--blue-dark);
 }
 
 .feature-grid {
@@ -389,7 +389,7 @@ textarea:focus-visible {
 
 .feature-card p {
     margin-bottom: 0;
-    color: var(--muted);
+    color: var(--blue-dark);
 }
 
 .split-layout {
@@ -400,7 +400,7 @@ textarea:focus-visible {
 }
 
 .split-layout p {
-    color: var(--muted);
+    color: var(--blue-dark);
 }
 
 .text-link {
@@ -488,7 +488,7 @@ textarea {
 
 .form-status,
 .status-message {
-    color: var(--muted);
+    color: var(--blue-dark);
 }
 
 .page-hero {
@@ -507,7 +507,7 @@ textarea {
 .page-hero>p:last-child {
     max-width: 700px;
     margin: 0 auto;
-    color: var(--muted);
+    color: var(--blue-dark);
 }
 
 .toolbar {
@@ -523,7 +523,7 @@ textarea {
 }
 
 .toolbar p {
-    color: var(--muted);
+    color: var(--blue-dark);
     margin-bottom: 0;
 }
 
@@ -590,7 +590,7 @@ textarea {
 }
 
 .card-body p {
-    color: var(--muted);
+    color: var(--blue-dark);
     font-size: .92rem;
 }
 
