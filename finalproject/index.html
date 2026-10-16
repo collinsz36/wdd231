@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover Harare School of Logic, a learning community helping primary and secondary learners grow in reasoning, creativity and problem-solving.">
+    <meta name="author" content="Collins Zivanai">
+    <meta property="og:title" content="Harare School of Logic | Think Clearly. Create Confidently.">
+    <meta property="og:description"
+        content="Explore learning programmes and thinking activities at Harare School of Logic.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://collinsz36.github.io/wdd231/harare-school-of-logic/">
+    <meta property="og:image"
+        content="https://collinsz36.github.io/wdd231/harare-school-of-logic/images/social-preview.svg">
+    <title>Harare School of Logic | Home</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Harare School of Logic home">
+            <span class="brand-mark" aria-hidden="true">HL</span>
+            <span>Harare School <small>of Logic</small></span>
+        </a>
+        <button class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="site-nav">☰</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+            <a class="active" aria-current="page" href="index.html">Home</a>
+            <a href="programs.html">Programmes</a>
+            <a href="activities.html">Thinking Activities</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Curiosity • Reasoning • Confidence</p>
+                <h1>Think clearly.<br><span>Create confidently.</span></h1>
+                <p>Helping primary and secondary learners practise logical thinking, creative problem-solving and
+                    thoughtful decision-making.</p>
+                <div class="hero-actions">
+                    <a class="button button-gold" href="programs.html">Explore programmes</a>
+                    <a class="button button-outline" href="#approach">Our approach</a>
+                </div>
+            </div>
+            <div class="hero-art" role="img" aria-label="Illustration of a learner exploring logic puzzles">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="puzzle-piece">?</div>
+                <div class="chess-piece">♞</div>
+                <div class="logic-card"><span>THINK</span><strong>→</strong><span>SOLVE</span></div>
+                <div class="gold-dot"></div>
+            </div>
+        </section>
+
+        <section class="section intro" id="approach">
+            <div class="section-heading">
+                <p class="eyebrow">Learning with purpose</p>
+                <h2>More than memorising answers</h2>
+                <p>We want learners to ask good questions, explain their thinking, consider different possibilities and
+                    keep trying when a challenge is difficult.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card"><span class="feature-icon" aria-hidden="true">♟</span>
+                    <h3>Reason carefully</h3>
+                    <p>Practise planning, recognising patterns and thinking several steps ahead.</p>
+                </article>
+                <article class="feature-card"><span class="feature-icon" aria-hidden="true">✦</span>
+                    <h3>Create solutions</h3>
+                    <p>Explore more than one way to solve a problem and learn from mistakes.</p>
+                </article>
+                <article class="feature-card"><span class="feature-icon" aria-hidden="true">◎</span>
+                    <h3>Communicate ideas</h3>
+                    <p>Explain a solution clearly, listen to others and work together respectfully.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-muted">
+            <div class="split-layout">
+                <div>
+                    <p class="eyebrow">For growing minds</p>
+                    <h2>Learning for primary and secondary learners</h2>
+                    <p>Activities are designed to be engaging, age-appropriate and connected to everyday thinking
+                        skills. Learners can build confidence through guided practice, teamwork and reflection.</p>
+                    <a class="text-link" href="programs.html">See learning programmes <span
+                            aria-hidden="true">→</span></a>
+                </div>
+                <div class="stat-panel">
+                    <div><strong>01</strong><span>Observe the challenge</span></div>
+                    <div><strong>02</strong><span>Test possible solutions</span></div>
+                    <div><strong>03</strong><span>Explain what worked</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Start a conversation</h2>
+                <p>Parents and guardians can use this form to ask about programmes, activities and enrolment. This is a
+                    project demonstration form, not a live school registration service.</p>
+            </div>
+            <form class="contact-form" action="thankyou.html" method="get">
+                <div class="form-grid">
+                    <label for="parent-name">Parent or guardian name<input id="parent-name" name="name"
+                            autocomplete="name" required maxlength="70"></label>
+                    <label for="email">Email address<input id="email" name="email" type="email" autocomplete="email"
+                            required></label>
+                    <label for="learner-level">Learner level<select id="learner-level" name="level" required>
+                            <option value="">Choose a level</option>
+                            <option>Primary school</option>
+                            <option>Secondary school</option>
+                        </select></label>
+                    <label for="interest">Area of interest<select id="interest" name="interest" required>
+                            <option value="">Choose an area</option>
+                            <option>Chess and strategy</option>
+                            <option>Logic puzzles</option>
+                            <option>Debate and communication</option>
+                            <option>General enrolment information</option>
+                        </select></label>
+                </div>
+                <label for="message">Your question<textarea id="message" name="message" rows="4" maxlength="500"
+                        required></textarea></label>
+                <label class="check-label"><input type="checkbox" id="save-preference"> Remember my preferred learner
+                    level on this device</label>
+                <button class="button button-blue" type="submit">Send enquiry</button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Harare School of Logic</a>
+            <p>Helping learners become thoughtful problem-solvers.</p>
+        </div>
+        <div class="footer-links"><a href="attributions.html">Attributions</a><a href="programs.html">Programmes</a><a
+                href="activities.html">Activities</a><a href="#" class="video-link">Project demonstration video</a>
+        </div>
+        <p class="copyright">© <span id="year"></span> Harare School of Logic · Student project by Collins Zivanai</p>
+    </footer>
+</body>
+
+</html>

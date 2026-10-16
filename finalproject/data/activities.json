@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "Chess strategy",
+        "category": "Strategy",
+        "level": "Primary",
+        "duration": "30–60 minutes",
+        "description": "Plan ahead and consider the consequences of each move.",
+        "symbol": "♞",
+        "skill": "Creativity",
+        "outcome": "Compare possible choices using clear reasons."
+    },
+    {
+        "id": 2,
+        "name": "Debate circle",
+        "category": "Communication",
+        "level": "Secondary",
+        "duration": "30–45 minutes",
+        "description": "Build an argument, listen respectfully and respond with reasons.",
+        "symbol": "◉",
+        "skill": "Communication",
+        "outcome": "Work patiently and learn from a first attempt."
+    },
+    {
+        "id": 3,
+        "name": "Logic-grid challenge",
+        "category": "Puzzles",
+        "level": "Primary",
+        "duration": "20–30 minutes",
+        "description": "Use clues and elimination to find which statements fit together.",
+        "symbol": "▦",
+        "skill": "Planning",
+        "outcome": "Share ideas and reflect on what could improve."
+    },
+    {
+        "id": 4,
+        "name": "Jigsaw puzzle lab",
+        "category": "Puzzles",
+        "level": "All learners",
+        "duration": "20–40 minutes",
+        "description": "Notice shapes, patterns and relationships while working toward a shared goal.",
+        "symbol": "▧",
+        "skill": "Reasoning",
+        "outcome": "Explain the steps behind a solution."
+    },
+    {
+        "id": 5,
+        "name": "Building-block engineering",
+        "category": "Building",
+        "level": "Primary",
+        "duration": "30–45 minutes",
+        "description": "Design a stable structure, test it and improve it after observing results.",
+        "symbol": "▰",
+        "skill": "Creativity",
+        "outcome": "Compare possible choices using clear reasons."
+    },
+    {
+        "id": 6,
+        "name": "Mental disentanglement",
+        "category": "Puzzles",
+        "level": "All learners",
+        "duration": "15–25 minutes",
+        "description": "Explore how pieces connect and practise patience while testing possible moves.",
+        "symbol": "∞",
+        "skill": "Communication",
+        "outcome": "Work patiently and learn from a first attempt."
+    },
+    {
+        "id": 7,
+        "name": "Pattern detectives",
+        "category": "Creative thinking",
+        "level": "Primary",
+        "duration": "15–25 minutes",
+        "description": "Identify repeating rules and predict what should come next.",
+        "symbol": "⌁",
+        "skill": "Planning",
+        "outcome": "Share ideas and reflect on what could improve."
+    },
+    {
+        "id": 8,
+        "name": "Decision-making scenarios",
+        "category": "Creative thinking",
+        "level": "Secondary",
+        "duration": "25–35 minutes",
+        "description": "Compare choices, evidence, risks and possible outcomes before deciding.",
+        "symbol": "◇",
+        "skill": "Reasoning",
+        "outcome": "Explain the steps behind a solution."
+    },
+    {
+        "id": 9,
+        "name": "Team problem-solving",
+        "category": "Communication",
+        "level": "All learners",
+        "duration": "30–45 minutes",
+        "description": "Share roles and ideas to solve a challenge that is difficult to complete alone.",
+        "symbol": "◎",
+        "skill": "Creativity",
+        "outcome": "Compare possible choices using clear reasons."
+    },
+    {
+        "id": 10,
+        "name": "Number riddles",
+        "category": "Puzzles",
+        "level": "Primary",
+        "duration": "15–20 minutes",
+        "description": "Use number relationships and careful reasoning to explain an answer.",
+        "symbol": "＋",
+        "skill": "Communication",
+        "outcome": "Work patiently and learn from a first attempt."
+    },
+    {
+        "id": 11,
+        "name": "Strategy board games",
+        "category": "Strategy",
+        "level": "All learners",
+        "duration": "25–40 minutes",
+        "description": "Practise planning, adapting to changing situations and learning from outcomes.",
+        "symbol": "▤",
+        "skill": "Planning",
+        "outcome": "Share ideas and reflect on what could improve."
+    },
+    {
+        "id": 12,
+        "name": "Creative construction",
+        "category": "Building",
+        "level": "All learners",
+        "duration": "30–60 minutes",
+        "description": "Turn a design idea into a model and explain why its parts work together.",
+        "symbol": "△",
+        "skill": "Reasoning",
+        "outcome": "Explain the steps behind a solution."
+    },
+    {
+        "id": 13,
+        "name": "Evidence and claims",
+        "category": "Communication",
+        "level": "Secondary",
+        "duration": "25–40 minutes",
+        "description": "Distinguish a claim from evidence and ask questions that test an argument.",
+        "symbol": "✓",
+        "skill": "Creativity",
+        "outcome": "Compare possible choices using clear reasons."
+    },
+    {
+        "id": 14,
+        "name": "Visual-spatial puzzles",
+        "category": "Puzzles",
+        "level": "Primary",
+        "duration": "15–30 minutes",
+        "description": "Rotate, compare and mentally combine shapes to solve a visual challenge.",
+        "symbol": "◈",
+        "skill": "Communication",
+        "outcome": "Work patiently and learn from a first attempt."
+    },
+    {
+        "id": 15,
+        "name": "Design a better solution",
+        "category": "Creative thinking",
+        "level": "Secondary",
+        "duration": "35–50 minutes",
+        "description": "Define a problem, suggest several solutions, test one and reflect on improvements.",
+        "symbol": "✦",
+        "skill": "Planning",
+        "outcome": "Share ideas and reflect on what could improve."
+    }
+]

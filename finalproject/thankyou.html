@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Confirmation of your enquiry to Harare School of Logic.">
+    <meta name="author" content="Collins Zivanai">
+    <meta property="og:title" content="Enquiry received | Harare School of Logic">
+    <meta property="og:description" content="Review the information submitted in the school enquiry form.">
+    <title>Enquiry Confirmation | Harare School of Logic</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/site.css">
+    <script type="module">
+        import { setupNavigation } from "./scripts/shared.js";
+        setupNavigation();
+        document.querySelector("#year").textContent = new Date().getFullYear();
+        const params = new URLSearchParams(window.location.search);
+        const output = document.querySelector("#submitted-data");
+        const fields = [["Name", "name"], ["Email", "email"], ["Learner level", "level"], ["Area of interest", "interest"], ["Question", "message"]];
+        output.innerHTML = fields.map(([label, key]) => {
+            const value = params.get(key);
+            return value ? `<p><strong>${label}:</strong> ${escapeText(value)}</p>` : "";
+        }).join("") || "<p>No form information was included in the URL.</p>";
+        function escapeText(value) {
+            const element = document.createElement("span");
+            element.textContent = value;
+            return element.innerHTML;
+        }
+    </script>
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">HL</span><span>Harare School
+                <small>of Logic</small></span></a><button class="menu-button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="site-nav">☰</button>
+        <nav class="site-nav" id="site-nav"><a href="index.html">Home</a><a href="programs.html">Programmes</a><a
+                href="activities.html">Thinking Activities</a></nav>
+    </header>
+    <main id="main" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Thank you</p>
+            <h1>Enquiry received</h1>
+            <p>This demonstration page displays the information submitted through the GET form.</p>
+        </div>
+        <div class="contact-form">
+            <h2>Your submitted information</h2>
+            <div id="submitted-data"></div><a class="button button-blue" href="index.html">Return to home page</a>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Harare School of Logic</a>
+            <p>Helping learners become thoughtful problem-solvers.</p>
+        </div>
+        <div class="footer-links"><a href="attributions.html">Attributions</a><a href="#" class="video-link">Project
+                demonstration video</a></div>
+        <p class="copyright">© <span id="year"></span> Harare School of Logic · Student project by Collins Zivanai</p>
+    </footer>
+</body>
+
+</html>

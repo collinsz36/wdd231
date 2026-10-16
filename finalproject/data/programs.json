@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Primary Logic Explorers",
+        "category": "Reasoning foundations",
+        "level": "Primary",
+        "duration": "Weekly sessions",
+        "description": "A playful introduction to patterns, sorting, sequencing, riddles and explaining how an answer was reached.",
+        "skills": "Observation, patterns, reasoning",
+        "outcome": "Learners practise explaining their thinking."
+    },
+    {
+        "id": 2,
+        "name": "Secondary Critical Thinkers",
+        "category": "Critical thinking",
+        "level": "Secondary",
+        "duration": "Weekly sessions",
+        "description": "Learners evaluate claims, examine evidence, compare choices and practise making reasoned decisions.",
+        "skills": "Analysis, evidence, decision-making",
+        "outcome": "Learners learn to support ideas with reasons."
+    },
+    {
+        "id": 3,
+        "name": "Chess and Strategy Club",
+        "category": "Strategy",
+        "level": "All learners",
+        "duration": "30–60 minute sessions",
+        "description": "Guided chess and strategy games encourage planning, patience, anticipation and reflection after each game.",
+        "skills": "Planning, focus, adaptability",
+        "outcome": "Learners practise thinking ahead."
+    },
+    {
+        "id": 4,
+        "name": "Puzzle and Problem-Solving Lab",
+        "category": "Puzzles",
+        "level": "All learners",
+        "duration": "Project-based sessions",
+        "description": "Learners tackle logic grids, visual puzzles, jigsaws and disentanglement challenges with increasing complexity.",
+        "skills": "Persistence, spatial reasoning, logic",
+        "outcome": "Learners test and refine different approaches."
+    },
+    {
+        "id": 5,
+        "name": "Debate and Communication",
+        "category": "Communication",
+        "level": "Secondary",
+        "duration": "Group workshops",
+        "description": "Learners prepare viewpoints, listen actively, question assumptions and communicate respectfully.",
+        "skills": "Speaking, listening, argument",
+        "outcome": "Learners present ideas clearly and fairly."
+    },
+    {
+        "id": 6,
+        "name": "Creative Builders",
+        "category": "Creative problem-solving",
+        "level": "Primary",
+        "duration": "Hands-on workshops",
+        "description": "Using blocks and simple materials, learners design structures, test their ideas and make improvements.",
+        "skills": "Design, teamwork, experimentation",
+        "outcome": "Learners connect ideas with practical tests."
+    },
+    {
+        "id": 7,
+        "name": "Team Challenge Sessions",
+        "category": "Collaboration",
+        "level": "All learners",
+        "duration": "Group activities",
+        "description": "Small groups solve shared challenges by discussing options, dividing tasks and reviewing their results.",
+        "skills": "Teamwork, communication, planning",
+        "outcome": "Learners practise collaborative problem-solving."
+    },
+    {
+        "id": 8,
+        "name": "Decision Skills Workshop",
+        "category": "Decision-making",
+        "level": "Secondary",
+        "duration": "Short workshops",
+        "description": "Realistic scenarios help learners identify options, weigh consequences and explain their choices.",
+        "skills": "Judgement, evaluation, reflection",
+        "outcome": "Learners develop a deliberate decision process."
+    },
+    {
+        "id": 9,
+        "name": "Visual Thinking Studio",
+        "category": "Visual reasoning",
+        "level": "Primary",
+        "duration": "Creative sessions",
+        "description": "Shapes, spatial puzzles and visual patterns encourage learners to notice relationships and imagine alternatives.",
+        "skills": "Spatial awareness, observation, creativity",
+        "outcome": "Learners strengthen visual reasoning."
+    }
+]

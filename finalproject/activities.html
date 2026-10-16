@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover chess, debate, logic puzzles, building challenges and other activities that support reasoning and creative problem-solving.">
+    <meta name="author" content="Collins Zivanai">
+    <meta property="og:title" content="Thinking Activities | Harare School of Logic">
+    <meta property="og:description" content="Browse activities that encourage reasoning, teamwork and creativity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://collinsz36.github.io/wdd231/harare-school-of-logic/activities.html">
+    <meta property="og:image"
+        content="https://collinsz36.github.io/wdd231/harare-school-of-logic/images/social-preview.svg">
+    <title>Thinking Activities | Harare School of Logic</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/site.css">
+    <script type="module" src="scripts/activities.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">HL</span><span>Harare School
+                <small>of Logic</small></span></a>
+        <button class="menu-button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="site-nav">☰</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a
+                href="programs.html">Programmes</a><a class="active" aria-current="page" href="activities.html">Thinking
+                Activities</a></nav>
+    </header>
+    <main id="main">
+        <section class="page-hero">
+            <p class="eyebrow">Explore and practise</p>
+            <h1>Thinking activities</h1>
+            <p>Browse practical activities that give learners a chance to reason, experiment, collaborate and reflect.
+            </p>
+        </section>
+        <section class="section">
+            <div class="toolbar">
+                <div>
+                    <h2>Activity library</h2>
+                    <p>Save activities to your list on this device, or open a card for more details.</p>
+                </div><label for="activity-filter">Activity type <select id="activity-filter">
+                        <option value="all">All activities</option>
+                        <option value="Strategy">Strategy</option>
+                        <option value="Puzzles">Puzzles</option>
+                        <option value="Communication">Communication</option>
+                        <option value="Building">Building</option>
+                        <option value="Creative thinking">Creative thinking</option>
+                    </select></label>
+            </div>
+            <div class="saved-bar"><span id="saved-count">0 activities saved</span><button id="show-saved"
+                    class="text-button" type="button">Show saved only</button><button id="clear-saved"
+                    class="text-button" type="button">Clear saved</button></div>
+            <p id="data-status" class="status-message" aria-live="polite">Loading activities…</p>
+            <div id="activity-grid" class="card-grid"></div>
+        </section>
+        <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="dialog-title">
+            <div class="dialog-header">
+                <h2 id="dialog-title">Activity details</h2><button class="dialog-close"
+                    aria-label="Close details">×</button>
+            </div>
+            <div id="dialog-content"></div>
+            <form method="dialog"><button class="button button-blue">Close</button></form>
+        </dialog>
+    </main>
+    <footer class="site-footer">
+        <div><a class="footer-brand" href="index.html">Harare School of Logic</a>
+            <p>Helping learners become thoughtful problem-solvers.</p>
+        </div>
+        <div class="footer-links"><a href="attributions.html">Attributions</a><a href="index.html">Home</a><a
+                href="programs.html">Programmes</a><a href="#" class="video-link">Project demonstration video</a></div>
+        <p class="copyright">© <span id="year"></span> Harare School of Logic · Student project by Collins Zivanai</p>
+    </footer>
+</body>
+
+</html>
